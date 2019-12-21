@@ -22,8 +22,7 @@
         android:id="@+id/edtPS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="27dp"
+        android:layout_marginTop="12dp"
         android:ems="10"
         android:hint="Type Punch Speed"
         android:inputType="textPersonName"
@@ -34,25 +33,27 @@
         android:id="@+id/edtPP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="3dp"
-        android:layout_marginBottom="31dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="88dp"
         android:ems="10"
         android:hint="Type Punch Power"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/edtKS"
-        app:layout_constraintEnd_toEndOf="@+id/edtKS" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPS" />
 
     <EditText
         android:id="@+id/edtKS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="245dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="Type Kick Speed"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/edtPP" />
 
     <EditText
         android:id="@+id/edtKP"
@@ -98,5 +99,16 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtView" />
+
+    <Button
+        android:id="@+id/btnNextActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Next Page"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
